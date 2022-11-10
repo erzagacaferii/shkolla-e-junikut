@@ -1,0 +1,408 @@
+
+
+#body{
+  
+ background-color:#26272b ;
+ color: white;
+}
+
+.header-hr {
+  display: inline-block;
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+  width: 30%;
+}
+
+.scrolling-images {
+  width: 100%;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: inset 0px 63px 41px -78px rgba(0,0,0,0.23), inset 0px -63px 41px -78px rgba(0,0,0,0.23);
+}
+
+.scrolling-images-hr {
+  width: 70%;
+}
+
+.scrolling-images > img {
+  max-height: 100px;
+  position: absolute;
+  max-width: 140px;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: auto;
+  opacity: 0;
+}
+
+.scrolling-images > .animated { 
+  animation-name: imscroll;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes imscroll {
+  0% {
+    transform: translate(-500px, -50%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(0, -50%);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(500px, -50%);
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .header-hr {
+    display: none;
+  }
+  
+  
+  .scrolling-images > img {
+    max-height: 100px;
+    position: absolute;
+    max-width: 100px;
+  }
+
+  .scrolling-images {
+    height: 110px;
+  }
+  
+  @keyframes imscroll {
+    0% {
+      transform: translate(-300px, -50%);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.7;
+    }
+    50% {
+      transform: translate(0, -50%);
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(300px, -50%);
+    }
+  }
+}
+
+
+.header {
+  text-align: center;
+/*   text-transform: uppercase; */
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Oswald', sans-serif;
+  color: #333333;
+}
+
+
+.div1{
+  overflow: scroll;
+  height: 250px;
+}
+
+#navbar-example2{
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  
+
+}
+#carousel{
+  z-index: -2;
+}
+
+#scrollspyHeading2  {
+  text-align: center;
+}
+
+#scrollspyHeading1  {
+  text-align: center;
+}
+
+#scrollspyHeading3  {
+  text-align: center;
+}
+#scrollspyHeading3  {
+  text-align: center;
+}
+
+.h3{
+  letter-spacing: 5px;
+  word-spacing:10px ;
+  font-family: 'Varela Round', sans-serif;
+
+}
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.offcanvas-body{
+  align-items: left;
+}
+.button{
+  margin-top: 100px;
+  margin-right: 100px;
+  width: 300px;
+  height: 100px;
+  font-size: 30px;
+  background-color: lightgreen;
+  color: white;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  border: 1px dotted transparent;
+  animation: changeColor1 5s linear infinite;
+}
+@keyframes changeColor1{
+    0% {
+        filter: hue-rotate(0deg);
+
+    }
+    100% {
+        filter:hue-rotate(360deg);
+        
+        
+}
+
+}
+.a{
+  text-decoration: none;
+  color: white;
+}
+.button:hover{
+  background-color: white;
+  color: black;
+}
+
+.offcanvas-body{
+  background-color:#26272b ;
+  width: 400px;
+}
+
+.nav-link{
+  color: black;
+  transition: 0.7s ease;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.nav-link:hover{
+  background-color: black;
+  color: white;
+}
+.navbar-brand{
+font-family: 'Diplomata SC', cursive;
+ color: black;
+}
+
+.navbar-brand:hover{
+  color: black;
+}
+#h3{
+font-family: 'Rubik Moonrocks', cursive;
+}
+
+#buttonnn{
+  background-color: black;
+  color: white;
+  transition: 0.5s ease;
+  border: 1px solid transparent;
+}
+
+#buttonnn:hover{
+  background-color: white;
+  color: black;
+}
+
+.link{
+  margin-left: -100px;
+}

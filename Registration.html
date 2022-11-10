@@ -1,0 +1,133 @@
+<?php
+   include('server.php');
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <title></title>
+</head>
+<body>
+<!-- this code for for promotion don't copy this start -->
+<a href="http://freetoolssite.com" style="display: block;text-align: center;font-size: 20px;margin: 50px auto;color: #fff;text-transform: uppercase;padding: 15px 25px;text-decoration:none;width:fit-content;background-color: orange; border-radius: 4px;box-shadow: 0 2px 25px orange;">Visit Our Free Tools Site</a>
+<!-- this code for for promotion don't copy this end -->
+
+
+
+
+<div class="form_container active">
+
+  <div class="sign_in">
+    <form action="#">
+      <h2 class="form_title">Sign In</h2>
+      <div class="form_group">
+        <input type="email" class="form_control" name="email" placeholder="Email">
+      </div>
+
+      <div class="form_group">
+        <input type="password" class="form_control"  password="password" placeholder="Password">
+      </div>
+
+      <div class="form_group">
+        <button type="submit" class="submit_btn">
+          Sign In
+        </button>
+      </div>
+
+      <div class="form_group">
+        <a href="#" class="form_footer_link">
+          Forgot Password ?
+        </a>
+      </div>
+    </form>
+  </div>
+
+  <div class="sign_up">
+    <form action="#">
+      <h2 class="form_title">Sign Up</h2>
+
+      <div class="form_group">
+        <input type="text" class="form_control" name='emri' placeholder="Emri...">
+      </div>
+
+      <div class="form_group">
+        <input type="text" class="form_control" name='mbiemri' placeholder="Mbiemri...">
+      </div>
+
+      <div class="form_group">
+        <input type="email" class="form_control" name='email' placeholder="Email..">
+      </div>
+
+      <div class="form_group">
+        <input type="password" class="form_control"  name='password' placeholder="Password...">
+      </div>
+
+      <div class="form_group">
+        <input type="password" class="form_control"  name='confirmpassword' placeholder="Confirm Password...">
+      </div>
+
+      <div class="form_group">
+        <input type="text" class="form_control"  name='emriiprindit' placeholder="Emri i prindit...">
+      </div>
+
+      <div class="form_group">
+        <input type="text" class="form_control"  name='nrtelefonit' placeholder="Numri i telefonit...">
+      </div>
+
+
+
+      <div class="form_group">
+        <button type="submit" class="submit_btn">
+          Sign Up
+        </button>
+      </div>
+
+      <div class="form_group">
+        <a href="#" class="form_footer_link">
+          You Don't Have Account ?
+        </a>
+      </div>
+    </form>
+  </div>
+
+  <div class="overlay_container">
+    <div class="overlay">
+      <div class="left">
+        <h3>Mire se vjen</h3>
+        <p>
+          To keep connected with us please login with your personal infos
+        </p>
+        <button class="open_sign_in">
+          Sign In
+        </button>
+      </div>
+
+      <div class="right">
+        <h3>Hello, Friend!</h3>
+        <p>
+          Enter Your Personal Details and Start Journey With Us
+        </p>
+        <button class="open_sign_up">
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script type="text/javascript">let form_container = document.querySelector('.form_container'),
+    open_sign_in   = document.querySelector('.open_sign_in'),
+    open_sign_up   = document.querySelector('.open_sign_up');
+
+
+open_sign_in.addEventListener('click', toggle_form);
+open_sign_up.addEventListener('click', toggle_form);
+
+
+function toggle_form() {
+    form_container.classList.toggle('active');
+}</script>
+</body>
+</html>

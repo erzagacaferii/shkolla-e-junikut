@@ -1,0 +1,40 @@
+.delete{
+	border: 1px solid red;
+	background-color: red;
+	color: whitesmoke;
+	font-size: 15px;
+	border-radius: 20px;
+    border-width: 10px;
+    font-family: 'Varela Round', sans-serif;
+    transition: 0.8s ease;
+}
+
+.delete:hover{
+border-width: 13px;
+}
+
+
+.update{
+	border: 1px solid #5bad4b;
+	background-color: #5bad4b;
+	color: whitesmoke;
+	font-size: 15px;
+	border-radius: 20px;
+    border-width: 10px;
+    font-family: 'Varela Round', sans-serif;
+    transition: 0.8s ease;
+}
+
+.update:hover{
+border-width: 13px;
+}
+
+
+.btn{
+	transition: 0.5s ease;
+	font-size: 15px;
+}
+
+.btn:hover{
+font-size: 17px;
+}
